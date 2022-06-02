@@ -1,0 +1,16 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke-width="10" id="svg_14">
+   <rect rx="5" id="svg_3" height="10" width="560" y="571" x="20" stroke="#000" fill="#000000"/>
+   <rect transform="rotate(-90, 112.667, 306)" rx="5" id="svg_4" height="10" width="550" y="301" x="-162.33333" stroke="#000" fill="#000000"/>
+   <rect rx="5" id="svg_5" height="10" width="340" y="29.96346" x="108.33333" stroke="#000" fill="#000000"/>
+   <rect transform="rotate(-60, 148.953, 98.8335)" rx="5" id="svg_7" height="10" width="150" y="93.8335" x="73.95255" stroke="#000" fill="#000000"/>
+   <rect transform="rotate(-45, 79.5764, 541.855)" rx="5" id="svg_8" height="10" width="100" y="536.85481" x="29.57637" stroke="#000" fill="#000000"/>
+   <rect transform="rotate(45, 148.243, 541.521)" rx="5" id="svg_9" height="10" width="100" y="536.52148" x="98.24291" stroke="#000" fill="#000000"/>
+   <rect transform="rotate(-30, 175.619, 71.5002)" rx="5" id="svg_10" height="10" width="150" y="66.50022" x="100.61916" stroke="#000" fill="#000000"/>
+   <rect transform="rotate(-90, 444.5, 79.9667)" rx="5" id="svg_13" height="10" width="100" y="74.96665" x="394.49938" stroke="#000" fill="#000000"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Ahorcado - Oracle ONE</title>
+        <link rel="icon" type="image/x-icon" href="resources/images/logo.svg">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body onload="HangmanGame.init('messagesContainer', 'mainScreen', 'wordScreen', 'inputWord', 'gameScreen', 'wordContainer', 'errorContainer', 'btnLose', 'gallow', 'gameStatus');">
+        <header>
+            <img src="resources/images/logo.svg" class="logo">
+        </header>
+        <main>
+            <div id="messagesContainer" class="messagesContainer"></div>
+            <section id="mainScreen" class="withDictionary">
+                <div class="buttonContainer">
+                    <button onclick="HangmanGame.startGame()" class="button primary">Iniciar juego</button>
+                    <button onclick="HangmanGame.addWord()" class="button secondary">Agregar nueva palabra</button>
+                </div>
+            </section>
+            <section id="wordScreen" class="insertWord hidden">
+                <div class="dataContainer">
+                    <input id="inputWord" class="word" type="text" placeholder="Inserte una palabra">
+                    <div>
+                        <div class="warning">Solo una palabla</div>
+                        <button onclick="HangmanGame.savePlay()" class="button primary">Guardar y empezar</button>
+                        <button onclick="HangmanGame.cancelAddWord()" class="button secondary">Cancelar</button>
+                    </div>
+                </div>
+            </section>
+            <section id="gameScreen" class="gameContainer hidden">
+                <div class="game">
+                    <div class="graphics">
+                        <div id="gameStatus" class="stamp"></div>
+                        <div id="gallow" class="gallow start"></div>
+                    </div>
+                    <div>
+                        <div id="wordContainer" class="letters" onclick="HangmanGame.enableMobileSupport()">
+                        </div>
+                        <div id="errorContainer" class="errors">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="HangmanGame.replay()" class="button primary">Nuevo juego</button>
+                    <button onclick="HangmanGame.youLose()" id="btnLose" class="button secondary">Desistir</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
